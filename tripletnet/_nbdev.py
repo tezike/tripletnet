@@ -2,11 +2,18 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"resnet18": "conditionalnet.ipynb",
-         "ConditionalSimNet": "conditionalnet.ipynb",
+index = {"ConditionalSimNet": "conditionalnet.ipynb",
+         "default_image_loader": "loader.ipynb",
+         "TripletImageLoader": "loader.ipynb",
+         "FILENAMES": "loader.ipynb",
+         "resnet18": "run.ipynb",
+         "normalize": "run.ipynb",
          "TripletNet": "tripletnet.ipynb"}
 
 modules = ["models/conditionalnet.py",
+           "get_data.py",
+           "dataset/loader.py",
+           "run.py",
            "models/tripletnet.py"]
 
 doc_url = "https://tezike.github.io/tripletnet/"
